@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="webname"><a id="brand" href="index.html">Campus Connect</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li class="login"><a href="loginpage.html">Login/SignUp</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="discussion-page">
+        <h1>Department - Forum</h1>
+        <div class="dropdowns">
+                <div>
+                    <label for="department">Department</label><br>
+                    <select id="department">
+                        <option>All Departments</option>
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>ADS</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>MECH</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="threadType">Thread Type</label><br>
+                    <select id="threadType">
+                        <option>All Types</option>
+                        <option>Questions</option>
+                        <option>Discussions</option>
+                        <option>Announcements</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="activity">Activity</label><br>
+                    <select id="activity">
+                        <option>Recent Activity</option>
+                        <option>Most Popular</option>
+                        <option>Newest</option>
+                        <option>Unanswered</option>
+                    </select>
+                </div>
+            </div>
+        <div class="filter-section">
+            <input type="text" class="searchbox custom-box" id="searchDiscussions" placeholder="🔍 Search discussions...">
+        </div>
+        <div class="discussion-postbox">
+            <textarea id="discussionInput" rows="3" placeholder=" 📖 Write your discussion..."></textarea>
+            <button onclick="postDiscussion()">Post</button>
+        </div>
+        <div id="discussionList">
+            <div class="discussion-item">🔥 How do you prepare for placements in the 2nd year?</div>
+            <div class="discussion-item">🎉 Anyone joining the upcoming Tech Fest 2025?</div>
+            <div class="discussion-item">❓ When will we receive our sem Marksheets?</div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Campus-Connect. All rights reserved.</p>
+    </footer>
+    <script>
+        function postDiscussion() {
+            let input = document.getElementById("discussionInput");
+            let text = input.value.trim();
+            if (text !== "") {
+                let newDiv = document.createElement("div");
+                newDiv.className = "discussion-item";
+                newDiv.innerText = text;
+                document.getElementById("discussionList").prepend(newDiv);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
