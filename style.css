@@ -68,8 +68,8 @@ nav a:hover {
     font-weight: 500;
     padding: 100px 30px 50px;
     color: #de4949;
-    text-shadow: 0 0 8px #ffffff, 0 0 16px #ffffff, 
-                 0 0 24px #ffffff, 0 0 32px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 8px #ffffff, 0 0 16px #ffffff,
+        0 0 24px #ffffff, 0 0 32px rgba(255, 255, 255, 0.8);
 }
 
 .features {
@@ -292,7 +292,7 @@ th {
 
 .auth-extra {
     text-align: center;
-    padding:10px 20px;
+    padding: 10px 20px;
 }
 
 .auth-extra p {
@@ -327,7 +327,7 @@ th {
     background-color: black;
     color: white;
     font-size: medium;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 10px;
     cursor: pointer;
 }
@@ -345,7 +345,30 @@ footer {
     from {
         text-shadow: 0 0 5px #fff;
     }
+
     to {
         text-shadow: 0 0 20px red, 0 0 30px red;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav {
+        display: none;
+        position: absolute;
+        right: 16px;
+        top: 62px;
+        background: rgba(3, 7, 18, 0.9);
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .nav a {
+        display: block;
+        margin: 8px 0;
+        color: #bbb;
+    }
+
+    .nav-toggle {
+        display: inline-block;
     }
 }

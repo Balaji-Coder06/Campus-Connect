@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
@@ -27,5 +28,14 @@
     <footer>
         <p>&copy; 2025 Campus-Connect. All rights reserved.</p>
     </footer>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.nav');
+
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+    </script>
 </body>
+
 </html>
