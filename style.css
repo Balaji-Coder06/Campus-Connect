@@ -17,7 +17,6 @@ a {
     color: #fff;
 }
 
-/* Navbar */
 nav {
     font-size: 22px;
     padding: 20px 40px;
@@ -25,6 +24,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #003049;
+    position: relative;
 }
 
 nav ul {
@@ -67,7 +67,6 @@ nav a:hover {
     color: white;
 }
 
-/* Home Page */
 .welcom {
     font-size: 50px;
     text-align: center;
@@ -120,7 +119,6 @@ nav a:hover {
     color: #ddd;
 }
 
-/* Forum Page */
 .discussion-page {
     max-width: 800px;
     margin: 40px auto;
@@ -136,15 +134,16 @@ nav a:hover {
 
 .discussion-postbox {
     display: flex;
-    width: 873px;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 10px;
     margin-bottom: 37px;
 }
 
 .discussion-postbox textarea {
     flex: 1;
-    padding: 7px;
-    height: 35px;
+    min-width: 200px;
+    height: 45px;
     border-radius: 8px;
     border: 2px solid #fff;
     background: rgba(54, 50, 50, 0.75);
@@ -185,7 +184,8 @@ nav a:hover {
 }
 
 .custom-box {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     height: 30px;
     font-size: 21px;
     padding: 10px;
@@ -220,7 +220,46 @@ nav a:hover {
     border-color: #E4572E;
 }
 
-/* Login/Signup */
+.events-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.event-tile {
+    background: #1b263b;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event-tile:hover {
+    background: #415a77;
+    transform: scale(1.05);
+}
+
+.event-tile img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.event-tile h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.event-tile p {
+    font-size: 16px;
+    color: #dcdcdc;
+}
+
 .auth-body {
     background-color: #001a39;
     display: flex;
@@ -236,7 +275,8 @@ nav a:hover {
     border-radius: 20px;
     background-color: white;
     box-shadow: 20px 20px 20px black;
-    width: 420px;
+    width: 90%;
+    max-width: 420px;
     overflow: hidden;
 }
 
@@ -258,7 +298,8 @@ th {
 }
 
 .auth-input {
-    width: 340px;
+    width: 350px;
+    max-width: 340px;
     padding: 12px;
     box-sizing: border-box;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
@@ -344,7 +385,6 @@ th {
     transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     padding: 18px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.02);
@@ -352,7 +392,6 @@ footer {
     color: #fff;
 }
 
-/* Glow animation */
 @keyframes glow {
     from {
         text-shadow: 0 0 5px #fff;
@@ -364,7 +403,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-    .nav {
+    nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -375,11 +414,24 @@ footer {
         border-radius: 8px;
     }
 
-    .nav.open {
+    nav ul.open {
         display: flex;
     }
 
     .nav-toggle {
         display: block;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discussion-postbox {
+        flex-direction: column;
+    }
+
+    .discussion-postbox button {
+        width: 100%;
     }
 }
