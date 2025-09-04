@@ -132,6 +132,12 @@ nav a:hover {
     font-size: 40px;
 }
 
+.search-button{
+    height: 50px;
+    width: 45px;
+    font-size: 30px;
+}
+
 .discussion-postbox {
     display: flex;
     flex-wrap: wrap;
@@ -144,12 +150,12 @@ nav a:hover {
     flex: 1;
     min-width: 200px;
     height: 45px;
+    padding: 8px;
     border-radius: 8px;
     border: 2px solid #fff;
     background: rgba(54, 50, 50, 0.75);
     color: #fff;
     font-size: 20px;
-    text-align: center;
     resize: none;
 }
 
@@ -224,7 +230,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-    max-width: 100%;
+    max-width: 1200px;
     padding: 0 20px;
     margin: 80px auto;
     text-align: center;
@@ -245,6 +251,7 @@ nav a:hover {
 }
 
 .event-tile img {
+    height: 250px;
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
