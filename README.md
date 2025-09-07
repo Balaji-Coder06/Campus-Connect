@@ -1,6 +1,9 @@
-Campus Connect
+🏫 Campus Connect
 
 Campus Connect is a student community platform built to encourage inter-college discussions, collaboration, and networking. The platform enables students to share ideas, resources, and opportunities, creating a digital space similar to online forums but tailored for college communities.
+
+## 🚀 Live Demo  
+🔗 [View Portfolio](https://balaji-coder06.github.io/Portfolio/) 
 
 🚀 Features
 🏫 Inter-college discussions
