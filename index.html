@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +13,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
-
 <body>
     <header>
         <nav>
-            <div class="webname"><a id="brand" href="index.html">Campus Connect</a></div>
-            <li class="login"><a href="loginpage.html">Login/SignUp</a></li>
+            <div style="color: white; font-size: 28px; font-weight: bolder;">Campus Connect</div>
+            <li class="login"><a href="login.html">Login/SignUp</a></li>
         </nav>
     </header>
     <main>
-        <h1 class="welcom">Welcome To SJIT Connect!!</h1>
-        <section class="features">
-            <a href="Discussions.html" class="feature-card">
-                <div class="icon">🔥</div>
+        <h1 class="welcomemsg">Welcome To SJIT Connect!!</h1>
+        <div class="options">
+            <a href="Discussions.html" class="option-card">
+                <div style="font-size: 40px;">🔥</div>
                 <h3>Connect & Discuss</h3>
                 <p>Join trending discussions, share ideas and connect with students.</p>
             </a>
-
-            <a href="Events.html" class="feature-card">
-                <div class="icon">🎉</div>
+            <a href="Events.html" class="option-card">
+                <div style="font-size: 40px;">🎉</div>
                 <h3>Discover Events</h3>
                 <p>Never miss out on hackathons, fests, and inter-college competitions happening near you.</p>
             </a>
-
-        </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Campus-Connect. All rights reserved.</p>
+        <p>&copy; 2025 Campus-Connect | All rights reserved.</p>
     </footer>
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('.nav');
-
-        navToggle.addEventListener('click', () => {
-            nav.classList.toggle('open');
-        });
-    </script>
 </body>
-
 </html>

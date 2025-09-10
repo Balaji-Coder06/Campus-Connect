@@ -5,15 +5,66 @@
 }
 
 body {
-    background-color: #001a39;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/BG.jpg);
+        background-size: cover;
 }
 
 main {
-    min-height: 84vh;
+    min-height: 83vh;
 }
 
 a {
     text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 80px;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    color: #ffff;
+}
+
+img {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #669bbc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0077b6;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: rgba(54, 50, 50, 0.75);
+    height: 30px;
     color: #fff;
 }
 
@@ -23,7 +74,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003049;
+    background-color: black;
     position: relative;
 }
 
@@ -34,12 +85,6 @@ nav ul {
 
 nav li {
     list-style: none;
-}
-
-.webname #brand {
-    font-size: 26px;
-    font-weight: bold;
-    color: #fff;
 }
 
 .login a {
@@ -67,7 +112,7 @@ nav a:hover {
     color: white;
 }
 
-.welcom {
+.welcomemsg {
     font-size: 50px;
     text-align: center;
     font-family: "Orbitron", sans-serif;
@@ -78,7 +123,7 @@ nav a:hover {
         0 0 24px #ffffff, 0 0 32px rgba(255, 255, 255, 0.8);
 }
 
-.features {
+.options {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -86,10 +131,10 @@ nav a:hover {
     padding: 90px 20px;
 }
 
-.feature-card {
+.option-card {
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid #fff;
-    border-radius: 12px;
+    border-radius: 15px;
     width: 280px;
     padding: 25px 20px;
     text-align: center;
@@ -97,48 +142,28 @@ nav a:hover {
     transition: transform 0.3s, background 0.3s;
 }
 
-.feature-card:hover {
+.option-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 25px 60px rgba(220, 38, 38, 0.6);
     border-color: rgba(220, 38, 38, 1);
 }
 
-.feature-card .icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.feature-card h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
-}
-
-.feature-card p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #ddd;
-}
-
-.discussion-page {
+.d-page {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 10px auto;
     padding: 20px;
+    min-height: 76vh;
 }
 
-.discussion-page h1 {
-    color: #fff;
-    text-align: center;
-    padding-bottom: 80px;
-    font-size: 40px;
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 780px;
+    gap: 10px;
+    padding-bottom: 20px;
 }
 
-.search-button{
-    height: 50px;
-    width: 45px;
-    font-size: 30px;
-}
-
-.discussion-postbox {
+.postbox {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -146,7 +171,7 @@ nav a:hover {
     margin-bottom: 37px;
 }
 
-.discussion-postbox textarea {
+.postbox textarea {
     flex: 1;
     min-width: 200px;
     height: 45px;
@@ -159,22 +184,7 @@ nav a:hover {
     resize: none;
 }
 
-.discussion-postbox button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    background: #669bbc;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.discussion-postbox button:hover {
-    background: #0077b6;
-}
-
-.discussion-item {
+.d-item {
     background: rgba(255, 255, 255, 0.05);
     color: #fff;
     font-size: 23px;
@@ -182,23 +192,6 @@ nav a:hover {
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 15px;
-}
-
-.filter-section {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.custom-box {
-    width: 100%;
-    max-width: 700px;
-    height: 30px;
-    font-size: 21px;
-    padding: 10px;
-    background-color: rgba(54, 50, 50, 0.75);
-    border: 2px solid #fff;
-    border-radius: 8px;
-    color: #fff;
 }
 
 .dropdowns {
@@ -226,7 +219,7 @@ nav a:hover {
     border-color: #E4572E;
 }
 
-.events-section {
+.events {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
@@ -237,7 +230,7 @@ nav a:hover {
 }
 
 .event-tile {
-    background: #1b263b;
+    background: rgba(255, 255, 255, 0.05);;
     color: white;
     padding: 20px;
     border-radius: 12px;
@@ -246,150 +239,19 @@ nav a:hover {
 }
 
 .event-tile:hover {
-    background: #415a77;
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(220, 38, 38, 0.6);
+    border-color: rgba(220, 38, 38, 1);
 }
 
-.event-tile img {
-    height: 250px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.event-tile h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.event-tile p {
-    font-size: 16px;
-    color: #dcdcdc;
-}
-
-.auth-body {
-    background-color: #001a39;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.auth-box {
-    border: solid 2px white;
+.form-box {
+    width: 330px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 3px solid #fff;
     border-radius: 20px;
-    background-color: white;
-    box-shadow: 20px 20px 20px black;
-    width: 90%;
-    max-width: 420px;
-    overflow: hidden;
-}
-
-.auth-heading {
-    background-color: white;
+    padding: 40px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(215, 51, 51);
-    padding: 20px;
-}
-
-th {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 0 10px 5px;
-    text-align: left;
-    color: black;
-    text-transform: capitalize;
-}
-
-.auth-input {
-    width: 350px;
-    max-width: 340px;
-    padding: 12px;
-    box-sizing: border-box;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-family: monospace;
-    font-size: 15px;
-}
-
-.auth-details {
-    color: black;
-    background-color: white;
-    padding: 20px 30px;
-}
-
-.auth-submit {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.auth-button {
-    border: none;
-    border-radius: 50px;
-    padding: 15px 100px;
-    background-color: #669bbc;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.auth-button:hover {
-    background-color: #0077b6;
-    transform: scale(1.05);
-}
-
-.auth-extra {
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.auth-extra p {
-    color: black;
-}
-
-.auth-extra a {
-    color: purple;
-}
-
-.auth-extra a:hover {
-    color: blue;
-}
-
-.auth-p {
-    color: black;
-}
-
-.auth-a {
-    color: purple;
-    text-decoration: none;
-}
-
-.auth-a:hover {
-    color: blue;
-    text-decoration: none;
-}
-
-.go-back-btn {
-    border-radius: 50px;
-    padding: 15px 60px;
-    background-color: black;
-    color: white;
-    font-size: medium;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.go-back-btn:hover {
-    background-color: #333;
-    transform: scale(1.05);
+    margin: 80px auto;
 }
 
 footer {
