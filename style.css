@@ -5,8 +5,8 @@
 }
 
 body {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/BG.jpg);
-        background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/BG.jpg);
+    background-size: cover;
 }
 
 main {
@@ -35,12 +35,6 @@ p {
     color: #ffff;
 }
 
-img {
-    height: 250px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
 
 button {
     padding: 10px 20px;
@@ -55,17 +49,6 @@ button {
 
 button:hover {
     background: #0077b6;
-}
-
-input {
-    flex: 1;
-    padding: 8px;
-    font-size: 20px;
-    border: 2px solid #fff;
-    border-radius: 6px;
-    background: rgba(54, 50, 50, 0.75);
-    height: 30px;
-    color: #fff;
 }
 
 nav {
@@ -155,45 +138,6 @@ nav a:hover {
     min-height: 76vh;
 }
 
-.search-container {
-    display: flex;
-    width: 100%;
-    max-width: 780px;
-    gap: 10px;
-    padding-bottom: 20px;
-}
-
-.postbox {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 10px;
-    margin-bottom: 37px;
-}
-
-.postbox textarea {
-    flex: 1;
-    min-width: 200px;
-    height: 45px;
-    padding: 8px;
-    border-radius: 8px;
-    border: 2px solid #fff;
-    background: rgba(54, 50, 50, 0.75);
-    color: #fff;
-    font-size: 20px;
-    resize: none;
-}
-
-.d-item {
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
-    font-size: 23px;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
 .dropdowns {
     display: flex;
     justify-content: center;
@@ -219,6 +163,66 @@ nav a:hover {
     border-color: #E4572E;
 }
 
+.searchbox {
+    display: flex;
+    width: 100%;
+    max-width: 780px;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background: rgba(54, 50, 50, 0.75);
+    height: 30px;
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #E4572E;
+}
+
+.postbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 37px;
+}
+
+.postbox textarea {
+    flex: 1;
+    min-width: 200px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    background: rgba(54, 50, 50, 0.75);
+    color: #fff;
+    font-size: 20px;
+    resize: none;
+}
+
+.postbox textarea:focus {
+    outline: none;
+    border-color: #E4572E;
+}
+
+.d-item {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 23px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
 .events {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -230,12 +234,20 @@ nav a:hover {
 }
 
 .event-tile {
-    background: rgba(255, 255, 255, 0.05);;
+    background: rgba(255, 255, 255, 0.05);
+    ;
     color: white;
     padding: 20px;
     border-radius: 12px;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .event-tile:hover {

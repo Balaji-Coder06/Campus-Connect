@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="images\forumicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,13 +19,14 @@
             <div class="nav-toggle">☰</div>
             <ul class="nav">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="Events.html"><i class="fa-solid fa-calendar-xmark" style="color: #ffffff;"></i> Events</a></li>
+                <li><a href="Events.html"><i class="fa-solid fa-calendar-xmark" style="color: #ffffff;"></i> Events</a>
+                </li>
                 <li class="login"><a href="login.html">Login/SignUp</a></li>
             </ul>
         </nav>
     </header>
     <main class="d-page">
-        <h1>Department - Forum</h1>
+        <h1 style="color: wheat;">Departments - Forum</h1>
         <div class="dropdowns">
             <div>
                 <label for="department">Department</label><br>
@@ -40,8 +41,8 @@
                 </select>
             </div>
             <div>
-                <label for="threadType">Thread Type</label><br>
-                <select id="threadType">
+                <label for="type">Thread Type</label><br>
+                <select id="type">
                     <option>All Types</option>
                     <option>Questions</option>
                     <option>Discussions</option>
@@ -58,7 +59,7 @@
                 </select>
             </div>
         </div>
-        <div class="search-container">
+        <div class="searchbox">
             <input type="text" placeholder="Search discussions...">
             <button><i class="fa fa-search"></i></button>
         </div>
@@ -69,7 +70,7 @@
         <div id="d-List">
             <div class="d-item">How do you prepare for placements in the 2nd year?</div>
             <div class="d-item">Anyone joining the upcoming National Symposium 2025?</div>
-            <div class="d-item">When is the Placement Training Startinf For Second Years?</div>
+            <div class="d-item">When is the Placement Training Starting For Second Years?</div>
         </div>
     </main>
     <footer>
