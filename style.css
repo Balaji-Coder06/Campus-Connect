@@ -312,10 +312,6 @@ footer {
         flex-direction: column;
     }
 
-    .discussion-postbox button {
-        width: 100%;
-    }
-
     .form-box {
         width: 65%;
     }
