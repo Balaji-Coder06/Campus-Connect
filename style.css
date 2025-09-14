@@ -87,14 +87,6 @@ nav li {
     list-style: none;
 }
 
-.login a {
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 8px 20px;
-    transition: 0.2s;
-    background-color: #669bbc;
-}
-
 nav a:hover {
     color: red;
     animation: glow 1.5s infinite alternate;
@@ -105,6 +97,14 @@ nav a:hover {
     font-size: 28px;
     color: #fff;
     cursor: pointer;
+}
+
+.login a {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: 0.2s;
+    background-color: #669bbc;
 }
 
 .login a:hover {
